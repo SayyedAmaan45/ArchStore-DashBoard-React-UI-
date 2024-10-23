@@ -1,38 +1,183 @@
-.App {
-  text-align: center;
-}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    .DashBoard {
+      display: flex;
+      flex-direction: row;
+      height: 100vh;
+      overflow: hidden;
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
+    .left-side {
+      width: 60px;
+      background-color: #2f4f7f;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+    .righ-side {
+      flex: 1;
+      margin-left: 30px;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 100vh;
+      background-color: #2f4f7f;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar-icons {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .navbar-icon {
+      margin-bottom: 10px;
+      cursor: pointer;
+    }
+
+    .navbar-icon.active {
+      background-color: #8cbce3;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .navbar-bottom-icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .navbar-profile-picture {
+      margin-top: 10px;
+    }
+
+    .navbar-profile-picture img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .header {
+      padding-left: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .header-icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-button {
+      background-color: #4682b4;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      margin-left: 10px;
+      /* Space between buttons */
+      cursor: pointer;
+    }
+
+    .header-button:hover {
+      background-color: #8cbce3;
+      color: black;
+      font-weight: bolder;
+    }
+
+
+    .dashboard-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .img-revenue {
+      padding: 20px 5px;
+      width: 100%;
+      height: auto;
+    }
+
+    .dashboard-section-opportunities-market-trend {
+      display: flex;
+    }
+
+    .img-opportunities {
+      flex: 1;
+      padding: 10px;
+      width: 100%;
+      height: auto;
+    }
+
+    .img-market-trend {
+      flex: 1;
+      width: 100%;
+      height: auto;
+    }
+
+    .dashboard-section-trending-visibility {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .img-trending {
+      flex: 1;
+      width: 100%;
+      height: auto;
+    }
+
+    .img-visibility {
+      flex: 1;
+      width: 100%;
+      height: auto;
+    }
+
+    .header-link ul li {
+      padding: 20px 50px;
+      text-decoration: none;
+      color: #000;
+      display: inline-block;
+      margin-right: 5px;
+      justify-content: space-between;
+    }
+
+
+    .header-link ul li:hover {
+      text-decoration: underline;
+      color: #db17d1;
+      font-style: italic;
+      font-weight: bold;
+    }
+
+
+
